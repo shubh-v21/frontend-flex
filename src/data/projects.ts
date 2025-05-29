@@ -10,7 +10,7 @@ interface Project {
 
 export const allProjects: Project[] = [
   {
-    title: "React Todo App",
+    title: "Todo App",
     description:
       "A simple but powerful todo application with filter and search capabilities.",
     techStack: ["React", "TypeScript", "TailwindCSS"],
