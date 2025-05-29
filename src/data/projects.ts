@@ -5,6 +5,7 @@ interface Project {
   description: string;
   techStack: string[];
   imageUrl: string;
+  link: string;
 }
 
 export const allProjects: Project[] = [
@@ -14,5 +15,6 @@ export const allProjects: Project[] = [
       "A simple but powerful todo application with filter and search capabilities.",
     techStack: ["React", "TypeScript", "TailwindCSS"],
     imageUrl: todo,
+    link: "todo",
   },
 ];

@@ -1,11 +1,14 @@
+import { Link } from "react-router";
+
 interface ProjectListItemProps {
   title: string;
   description: string;
   techStack: string[];
   imageUrl: string;
+    link: string;
 }
 
-const ProjectListItem = ({ title, description, techStack, imageUrl }: ProjectListItemProps) => {
+const ProjectListItem = ({ title, description, techStack, imageUrl , link }: ProjectListItemProps) => {
   return (
     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all mb-4 animate-fadeIn">
       <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100">
@@ -28,7 +31,8 @@ const ProjectListItem = ({ title, description, techStack, imageUrl }: ProjectLis
       </div>
       <div className="flex-shrink-0">
         <button className="px-3 py-1 border border-[var(--color-primary)] text-[var(--color-primary)] text-sm rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition-all">
-          View
+         <Link to={link} > View
+         </Link>
         </button>
       </div>
     </div>
