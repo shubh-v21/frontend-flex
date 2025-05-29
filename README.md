@@ -1,54 +1,65 @@
-# React + TypeScript + Vite
+# Frontend-Flex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Frontend-Flex** is a growing collection of **React mini-projects** built with **Vite**. This repo is my personal space to revise core frontend concepts, one focused project at a time.
 
-Currently, two official plugins are available:
+## 🚧 Project Status
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is in its early stages. I’ve just started working on it and will be adding new mini-projects regularly as I revise different parts of React.
 
-## Expanding the ESLint configuration
+Stay tuned — more projects and concepts are on the way!
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📚 What's the Goal?
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+* Reinforce core React concepts like state, props, hooks, and component structure
+* Build small, self-contained apps that demonstrate concepts clearly
+* Practice clean, modular code
+* Evolve the repo as my understanding deepens
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* **React**
+* **React-Router**
+* **TypeScript**
+* **TailwindCSS**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🔄 Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/shubh-v21/frontend-flex.git
+   ```
+
+2. Navigate into the repo:
+
+   ```bash
+   cd frontend-flex
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## 💡 Why This Repo?
+
+* It’s my **React playground**
+* A place to **experiment, learn, and iterate**
+* A useful reference for anyone revisiting **frontend basics**
+
+## 📌 Future Plans
+
+* Add more mini-projects focused on specific topics (e.g., forms, routing, API calls)
+* Improve UI/UX and folder structure
+
+---
+
+**If you're learning React too, feel free to follow along or fork this repo and build your own version!**
+
