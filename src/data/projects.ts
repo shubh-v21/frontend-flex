@@ -1,5 +1,5 @@
 import todo from "../assets/project_icons/todo.png";
-
+import minidb from "../assets/project_icons/minidb.png";
 interface Project {
   title: string;
   description: string;
@@ -16,5 +16,13 @@ export const allProjects: Project[] = [
     techStack: ["React", "TypeScript", "TailwindCSS"],
     imageUrl: todo,
     link: "todo",
+  },
+  {
+    title: "MiniDB",
+    description:
+      "Create tables, manage columns, and perform CRUD operations using browser localStorage.",
+    techStack: ["React", "TypeScript", "TailwindCSS" , "CRUD"],
+    imageUrl: minidb, // Placeholder image
+    link: "minidb",
   },
 ];
